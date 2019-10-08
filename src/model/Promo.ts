@@ -14,14 +14,13 @@ export interface IPromo extends IDefault, mongoose.Document {
   about: String;
 }
 let schema = {
-  _id: { type: String, required: true },
   title: { type: String, required: true },
   initDate: { type: Date, required: true },
   endDate: { type: Date, required: true },
   thumbnail: { type: String, required: true },
   initPrice: { type: Number, required: true },
   endPrice: { type: Number, required: true },
-  descont: { type: Number, required: true },
+  descont: { type: Number},
   about: { type: String, required: true },
 };
 
