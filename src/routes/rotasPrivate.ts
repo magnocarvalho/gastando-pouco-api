@@ -11,7 +11,8 @@ router.post("/user", UserCtrl.createUser);
 router.get("/user", UserCtrl.findUserUID);
 // tipo de comercio
 router.get("/tipos", TipoCtrl.getTipos);
+//promoçoes
 router.post("/promo", PromoCtrl.createPromo);
-router.get("/promo/:id", PromoCtrl.getPromosIdUser);
+router.get("/promo/:empresa?", PromoCtrl.getPromosIdUser);
 
 export = router;
