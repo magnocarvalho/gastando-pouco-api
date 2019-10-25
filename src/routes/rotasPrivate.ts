@@ -5,7 +5,7 @@ import TipoCtrl from "../controllers/TipoCtrl";
 import PromoCtrl from "../controllers/PromoCtrl";
 const router = express.Router();
 
-router.get("/promos", PromoCtrl.getPromos);
+
 
 router.use("/", firewallbase);
 // rotas de autenticação do usuario
