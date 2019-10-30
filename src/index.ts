@@ -4,8 +4,8 @@ import bodyParser from "body-parser";
 //rotas publicas e privadas
 import * as admin from "firebase-admin";
 import moment = require('moment');
-import router from "./routes/rotasPrivate";
-import rotasPublicas from "./routes/rotas";
+import router from "./routes/rotasEmpresas";
+import rotasPublicas from "./routes/rotasClientes";
 
 require("dotenv").config();
 var cors = require("cors");
